@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website Landing Page</title>
+  <link rel="stylesheet" href="css/font.css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/gsap.min.js"></script>
+</head>
+
+<body>
+  <div class="bg_">
+    <div class="container">
+      <header>
+        <nav>
+          <div class="logo">Travel<span></span></div>
+          <ul>
+            <li class="active">Home</li>
+            <li>Trip Planer</li>
+            <li>Blog</li>
+            <li>Categories</li>
+            <li>Contact</li>
+          </ul>
+          <div class="account_">
+            <i class="fa fa-user-o"></i>
+            <span>My Account</span>
+          </div>
+        </nav>
+      </header>
+      <div class="content_wrapper">
+        <div class="wrapper">
+          <p>We are the wonder of weekned<span></span></p>
+          <h2>Discover the world <br>with your guide.</h2>
+          <div class="cta"><span>Start Tour</span><i class="fa fa-play"></i></div>
+        </div>
+      </div>
+      <div class="social_container">
+        <div class="social_wrapper">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    let tl_ = gsap.timeline();
+    tl_.from(".bg_", {
+      duration: 2,
+      delay: .3,
+      opacity: 0,
+      ease: "expo.In",
+    }).from(["nav li", ".logo", ".account_", "nav"], {
+      duration: 1.3,
+      delay: -1.5,
+      y: 50,
+      opacity: 0,
+      ease: "expo.out",
+      stagger: {
+        amount: .3
+      }
+    })
+      .from([".content_wrapper", ".wrapper h2", ".wrapper p", ".wrapper .cta"], {
+        duration: 1.3,
+        delay: -.5,
+        y: 50,
+        opacity: 0,
+        ease: "expo.out",
+        stagger: {
+          amount: .3
+        }
+      })
+      .from([".social_container", ".social_wrapper .fa"], {
+        delay: -1.2,
+        x: -30,
+        opacity: 0,
+        ease: "expo.out",
+        stagger: {
+          amount: .3
+        }
+      })
+      //thanks for watching
+      //please subscribe my channel;
+  </script>
+</body>
+
+</html>

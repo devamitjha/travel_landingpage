@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+}
+
+.dFlex, .container header nav, .container header nav ul, .container header nav .account_, .container .content_wrapper, .container .content_wrapper .wrapper p, .container .content_wrapper .wrapper .cta, .container .content_wrapper .wrapper .cta .fa, .container .social_container .social_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bg_ {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url(../images/__bg.jpg) center center no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.container {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 100vh;
+}
+
+.container header {
+  width: 100%;
+  height: 60px;
+  padding: 0 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+}
+
+.container header nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container header nav .logo {
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container header nav .logo span {
+  background-color: red;
+  width: 5px;
+  height: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 5px;
+  margin-left: 5px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 5px;
+}
+
+.container header nav ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.container header nav ul li {
+  font-size: 14px;
+  cursor: pointer;
+  padding: 20px 0;
+}
+
+.container header nav ul li + li {
+  margin-left: 50px;
+}
+
+.container header nav ul li.active {
+  border-top: 1px solid #ff5108;
+}
+
+.container header nav .account_ {
+  font-size: 14px;
+}
+
+.container header nav .account_ span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 5px;
+}
+
+.container .content_wrapper {
+  width: 80%;
+  height: calc(100% - 80px);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: auto;
+}
+
+.container .content_wrapper .wrapper {
+  color: #fff;
+}
+
+.container .content_wrapper .wrapper p {
+  font-size: 16px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content_wrapper .wrapper p span {
+  display: inline-block;
+  width: 70px;
+  height: 1px;
+  background-color: #fff;
+  margin-left: 10px;
+}
+
+.container .content_wrapper .wrapper h2 {
+  font-size: 6vw;
+}
+
+.container .content_wrapper .wrapper .cta {
+  width: 160px;
+  height: 45px;
+  background-color: #ff5108;
+  color: #fff;
+  position: relative;
+  margin-top: 30px;
+  font-size: 14px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.container .content_wrapper .wrapper .cta span {
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.container .content_wrapper .wrapper .cta .fa {
+  width: 40px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #e74a07;
+  font-size: 14px;
+}
+
+.container .social_container {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.container .social_container .social_wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .social_container .social_wrapper .fa {
+  color: #fff;
+  font-size: 12px;
+}
+
+.container .social_container .social_wrapper .fa + .fa {
+  margin-top: 15px;
+}
+/*# sourceMappingURL=style.css.map */
